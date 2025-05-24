@@ -1,0 +1,119 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Barbara Oliva – Interior Designer">
+  <section class="relative h-screen flex items-center parallax-section">
+    <div class="absolute inset-0 z-0">
+      <div class="absolute inset-0 bg-black/40 z-10"></div>
+      <img 
+        src="/images/barbara-oliva.jpg"
+        alt="Barbara Oliva Interior Design"
+        class="w-full h-full object-cover"
+      />
+    </div>
+    <div class="container mx-auto px-4 relative z-20 text-white">
+      <h1 class="font-playfair text-5xl md:text-7xl mb-6 fade-in">
+        Barbara Oliva<br/>
+        <span class="text-3xl md:text-4xl">Interior Designer</span>
+      </h1>
+      <p class="text-xl md:text-2xl mb-8 max-w-2xl fade-in">
+        Mai più case copia e incolla. Progetto case su misura, eleganti e funzionali, 
+        che rispecchiano la personalità di chi le abita.
+      </p>
+      <div class="flex gap-4 fade-in">
+        <a href="/chi-sono" class="bg-accent text-primary px-8 py-3 rounded hover:bg-accent/90 transition-colors hover-lift">
+          Scopri di più
+        </a>
+        <a href="/contatti" class="border-2 border-white px-8 py-3 rounded hover:bg-white hover:text-primary transition-colors hover-lift">
+          Contattami
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-20 bg-white">
+    <div class="container mx-auto px-4">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+        <div class="parallax-section">
+          <img 
+            src="/images/barbara-oliva.jpg"
+            alt="Barbara Oliva"
+            class="rounded-lg shadow-xl"
+          />
+        </div>
+        <div class="fade-in">
+          <h2 class="font-playfair text-4xl mb-6">Chi Sono</h2>
+          <p class="text-lg mb-8">
+            La mia passione per il design nasce nell'infanzia, trascorsa nella bottega avveniristica 
+            di mio padre a Taranto. Dopo una carriera nel settore delle telecomunicazioni, ho riscoperto 
+            il mio talento e ho deciso di dedicarmi completamente all'interior design, creando spazi 
+            unici che riflettono l'essenza di chi li vive.
+          </p>
+          <a href="/chi-sono" class="inline-block bg-primary text-white px-8 py-3 rounded hover:bg-primary/90 transition-colors hover-lift">
+            Scopri di più
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-20 bg-gray-50">
+    <div class="container mx-auto px-4">
+      <h2 class="font-playfair text-4xl text-center mb-12 fade-in">I Miei Servizi</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="bg-white p-8 rounded-lg shadow-lg fade-in">
+          <h3 class="font-playfair text-2xl mb-4">Interior Design Completo</h3>
+          <p class="mb-4">Dalla ristrutturazione completa alla ridefinizione degli spazi.</p>
+        </div>
+        <div class="bg-white p-8 rounded-lg shadow-lg fade-in">
+          <h3 class="font-playfair text-2xl mb-4">Consulenza su Arredi e Materiali</h3>
+          <p class="mb-4">Selezione accurata di arredi e materiali per il tuo spazio.</p>
+        </div>
+        <div class="bg-white p-8 rounded-lg shadow-lg fade-in">
+          <h3 class="font-playfair text-2xl mb-4">Progettazione Outdoor</h3>
+          <p class="mb-4">Trasforma il tuo spazio esterno in un'oasi di design.</p>
+        </div>
+      </div>
+      <div class="text-center mt-12 fade-in">
+        <a href="/servizi" class="inline-block bg-primary text-white px-8 py-3 rounded hover:bg-primary/90 transition-colors hover-lift">
+          Scopri tutti i servizi
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-20 bg-white">
+    <div class="container mx-auto px-4">
+      <h2 class="font-playfair text-4xl text-center mb-12 fade-in">Cosa dicono i miei clienti</h2>
+      <div id="elfsight-app-reviews"></div>
+    </div>
+  </section>
+
+  <section class="py-20 bg-primary text-white parallax-section">
+    <div class="container mx-auto px-4 text-center">
+      <h2 class="font-playfair text-4xl mb-6 fade-in">Vuoi trasformare la tua casa?</h2>
+      <p class="text-xl mb-8 fade-in">Parliamone insieme e creiamo il tuo spazio ideale.</p>
+      <a href="/contatti" class="inline-block bg-accent text-primary px-8 py-3 rounded hover:bg-accent/90 transition-colors hover-lift fade-in">
+        Contattami
+      </a>
+    </div>
+  </section>
+</Layout>
+
+<script>
+  // Initialize Elfsight widget after the page loads
+  window.addEventListener('load', function() {
+    const script = document.createElement('script');
+    script.src = 'https://static.elfsight.com/platform/platform.js';
+    script.defer = true;
+    document.body.appendChild(script);
+
+    // Create container for reviews widget
+    const reviewsContainer = document.getElementById('elfsight-app-reviews');
+    if (reviewsContainer) {
+      reviewsContainer.className = 'elfsight-app-8440259a-630c-4149-b73b-abbd4ed7342e';
+      reviewsContainer.setAttribute('data-elfsight-app-lazy', '');
+    }
+  });
+</script>

@@ -1,0 +1,86 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Portfolio - Barbara Oliva Interior Designer">
+  <div class="pt-20">
+    <div class="relative h-[60vh]">
+      <div class="absolute inset-0">
+        <div class="absolute inset-0 bg-black/40 z-10"></div>
+        <img 
+          src="/images/barbara-oliva.jpg"
+          alt="Portfolio Barbara Oliva"
+          class="w-full h-full object-cover"
+        />
+      </div>
+      <div class="container mx-auto px-4 h-full flex items-center relative z-20">
+        <h1 class="font-playfair text-5xl md:text-7xl text-white">I miei progetti</h1>
+      </div>
+    </div>
+
+    <section class="py-20">
+      <div class="container mx-auto px-4 max-w-3xl text-center">
+        <h2 class="font-playfair text-4xl mb-8">Scopri le mie realizzazioni su Instagram</h2>
+        <p class="text-xl mb-12">
+          Ti invito a seguirmi su Instagram dove condivido regolarmente i miei ultimi progetti, 
+          ispirazioni di design e trasformazioni degli spazi. Ogni post racconta una storia unica 
+          di come un ambiente può essere trasformato in qualcosa di straordinario.
+        </p>
+
+        <div class="mt-16">
+          <h2 class="font-playfair text-4xl text-center mb-12">I miei ultimi progetti</h2>
+          <div id="elfsight-app-instagram" class="elfsight-app-b045ef8c-90a7-4923-bdd6-d85b70e355bd" data-elfsight-app-lazy></div>
+
+          <p class="text-lg text-gray-600 mt-16">
+            Scopri come trasformo gli spazi e creo ambienti unici che raccontano la storia di chi li abita.
+            Su Instagram condivido:
+          </p>
+          <ul class="mt-8 space-y-4 text-left max-w-xl mx-auto">
+            <li class="flex items-center gap-3">
+              <svg class="h-6 w-6 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+              </svg>
+              Prima e dopo delle trasformazioni
+            </li>
+            <li class="flex items-center gap-3">
+              <svg class="h-6 w-6 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+              </svg>
+              Dettagli di design esclusivi
+            </li>
+            <li class="flex items-center gap-3">
+              <svg class="h-6 w-6 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+              </svg>
+              Ispirazioni e tendenze di interior design
+            </li>
+            <li class="flex items-center gap-3">
+              <svg class="h-6 w-6 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+              </svg>
+              Progetti in corso d'opera
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-20 bg-primary text-white">
+      <div class="container mx-auto px-4 text-center">
+        <h2 class="font-playfair text-4xl mb-6">Pronto a trasformare i tuoi spazi?</h2>
+        <p class="text-xl mb-8">Ogni progetto è un'opportunità per creare qualcosa di unico e straordinario.</p>
+        <a href="/contatti" class="inline-block bg-accent text-primary px-8 py-3 rounded hover:bg-accent/90 transition-colors">
+          Contattami
+        </a>
+      </div>
+    </section>
+  </div>
+</Layout>
+
+<script>
+  // Load Elfsight script
+  const script = document.createElement('script');
+  script.src = 'https://static.elfsight.com/platform/platform.js';
+  script.async = true;
+  document.head.appendChild(script);
+</script>
